@@ -6,7 +6,7 @@ const db = require('./databaseConfig')
 module.exports = () => {
   const app = express()
   app.use(express.json())
-  app.use(express.static(__dirname + '/.well-known/pki-validation'));
+  app.use(express.static(__dirname + '/.well-known/pki-validation/'));
   app.use(cors())
   db()
 
